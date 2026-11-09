@@ -1,0 +1,6 @@
+O arquivo cacador_e_fantasma.glb que veio no pacote original NÃO é um modelo 3D:
+tem 346 bytes e é só um atalho para o Google Drive
+(https://drive.google.com/open?id=1bazkU6_LOcBMHQSu8gIH4U3po8GQiqpK).
+Baixe o arquivo verdadeiro e coloque nesta pasta.
+
+Os 8 modelos dos móveis agora existem: Assets/Resources/Moveis/ (gerados na v1.4, low-poly).

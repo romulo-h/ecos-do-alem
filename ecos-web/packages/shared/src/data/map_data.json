@@ -1,0 +1,881 @@
+{
+  "map_name": "Mansao_Vitoriana",
+  "source": "Planta baixa de referência do usuário (medida em pixels e convertida para metros; janelas em bay e lareiras simplificadas).",
+  "dimensions": {
+    "width_x": 15.0,
+    "depth_z": 15.5,
+    "floor_height": 3.2,
+    "total_floors": 2,
+    "note": "Corpo da casa x -8..7, z -10..5.5 (frente = +z). A varanda avança até z 7.8 e x 9.26."
+  },
+  "floors": [
+    {
+      "floor_index": 0,
+      "name": "Terreo",
+      "rooms": [
+        {
+          "name": "Despensa",
+          "bounds": {
+            "min": [
+              -8.0,
+              -10.0
+            ],
+            "max": [
+              -3.02,
+              -7.57
+            ]
+          }
+        },
+        {
+          "name": "Sala de Almoco / Copa",
+          "bounds": {
+            "min": [
+              -3.02,
+              -10.0
+            ],
+            "max": [
+              1.44,
+              -7.57
+            ]
+          }
+        },
+        {
+          "name": "Cozinha",
+          "bounds": {
+            "min": [
+              -8.0,
+              -7.57
+            ],
+            "max": [
+              1.44,
+              -3.37
+            ]
+          }
+        },
+        {
+          "name": "Cozinha (Bancada)",
+          "bounds": {
+            "min": [
+              -8.0,
+              -3.37
+            ],
+            "max": [
+              -2.68,
+              -2.2
+            ]
+          }
+        },
+        {
+          "name": "WC",
+          "bounds": {
+            "min": [
+              -8.0,
+              -2.2
+            ],
+            "max": [
+              -5.1,
+              -0.05
+            ]
+          }
+        },
+        {
+          "name": "Circulacao de Servico",
+          "bounds": {
+            "min": [
+              -5.1,
+              -2.2
+            ],
+            "max": [
+              -2.68,
+              -0.05
+            ]
+          }
+        },
+        {
+          "name": "Escritorio / Biblioteca",
+          "bounds": {
+            "min": [
+              -8.0,
+              -0.05
+            ],
+            "max": [
+              -2.68,
+              5.5
+            ]
+          }
+        },
+        {
+          "name": "Hall de Entrada",
+          "bounds": {
+            "min": [
+              -2.68,
+              -3.37
+            ],
+            "max": [
+              1.44,
+              3.19
+            ]
+          }
+        },
+        {
+          "name": "Vestibulo",
+          "bounds": {
+            "min": [
+              -2.68,
+              3.19
+            ],
+            "max": [
+              1.44,
+              5.5
+            ]
+          }
+        },
+        {
+          "name": "Sala de Estar",
+          "bounds": {
+            "min": [
+              1.44,
+              -10.0
+            ],
+            "max": [
+              7.0,
+              -1.07
+            ]
+          }
+        },
+        {
+          "name": "Sala de Jantar",
+          "bounds": {
+            "min": [
+              1.44,
+              -1.07
+            ],
+            "max": [
+              7.0,
+              5.5
+            ]
+          }
+        },
+        {
+          "name": "Varanda (Frente)",
+          "bounds": {
+            "min": [
+              -2.92,
+              5.5
+            ],
+            "max": [
+              9.26,
+              7.8
+            ]
+          },
+          "outdoor": true
+        },
+        {
+          "name": "Varanda (Lateral)",
+          "bounds": {
+            "min": [
+              7.0,
+              -3.53
+            ],
+            "max": [
+              9.26,
+              5.5
+            ]
+          },
+          "outdoor": true
+        }
+      ],
+      "doors": [
+        {
+          "id": "porta_principal",
+          "rooms": [
+            "Vestibulo",
+            "Varanda (Frente)"
+          ],
+          "center": [
+            -0.61,
+            5.5
+          ],
+          "width": 1.05,
+          "type": "door",
+          "swing_into": "Vestibulo"
+        },
+        {
+          "id": "arco_vestibulo",
+          "rooms": [
+            "Hall de Entrada",
+            "Vestibulo"
+          ],
+          "center": [
+            -0.71,
+            3.19
+          ],
+          "width": 1.8,
+          "type": "arch"
+        },
+        {
+          "id": "porta_dupla_jantar",
+          "rooms": [
+            "Hall de Entrada",
+            "Sala de Jantar"
+          ],
+          "center": [
+            1.44,
+            1.76
+          ],
+          "width": 1.7,
+          "type": "double_door",
+          "swing_into": "Sala de Jantar"
+        },
+        {
+          "id": "porta_dupla_cozinha_estar",
+          "rooms": [
+            "Cozinha",
+            "Sala de Estar"
+          ],
+          "center": [
+            1.44,
+            -5.63
+          ],
+          "width": 1.9,
+          "type": "double_door",
+          "swing_into": "Sala de Estar"
+        },
+        {
+          "id": "porta_estar_varanda",
+          "rooms": [
+            "Sala de Estar",
+            "Varanda (Lateral)"
+          ],
+          "center": [
+            7.0,
+            -2.44
+          ],
+          "width": 1.0,
+          "type": "door",
+          "swing_into": "Sala de Estar"
+        },
+        {
+          "id": "porta_despensa",
+          "rooms": [
+            "Despensa",
+            "Sala de Almoco / Copa"
+          ],
+          "center": [
+            -3.02,
+            -8.3
+          ],
+          "width": 0.8,
+          "type": "door",
+          "swing_into": "Despensa"
+        },
+        {
+          "id": "vao_copa",
+          "rooms": [
+            "Sala de Almoco / Copa",
+            "Cozinha"
+          ],
+          "center": [
+            -0.79,
+            -7.57
+          ],
+          "width": 4.4,
+          "type": "open"
+        },
+        {
+          "id": "vao_bancada",
+          "rooms": [
+            "Cozinha",
+            "Cozinha (Bancada)"
+          ],
+          "center": [
+            -5.34,
+            -3.37
+          ],
+          "width": 5.2,
+          "type": "open"
+        },
+        {
+          "id": "passagem_circulacao",
+          "rooms": [
+            "Cozinha (Bancada)",
+            "Circulacao de Servico"
+          ],
+          "center": [
+            -3.56,
+            -2.2
+          ],
+          "width": 1.1,
+          "type": "arch"
+        },
+        {
+          "id": "porta_wc",
+          "rooms": [
+            "WC",
+            "Circulacao de Servico"
+          ],
+          "center": [
+            -5.1,
+            -0.75
+          ],
+          "width": 0.85,
+          "type": "door",
+          "swing_into": "Circulacao de Servico"
+        },
+        {
+          "id": "porta_escritorio",
+          "rooms": [
+            "Circulacao de Servico",
+            "Escritorio / Biblioteca"
+          ],
+          "center": [
+            -3.65,
+            -0.05
+          ],
+          "width": 0.9,
+          "type": "door",
+          "swing_into": "Escritorio / Biblioteca"
+        },
+        {
+          "id": "escada_varanda_frente",
+          "rooms": [
+            "Varanda (Frente)",
+            "EXTERIOR"
+          ],
+          "center": [
+            -0.61,
+            7.8
+          ],
+          "width": 1.6,
+          "type": "open"
+        },
+        {
+          "id": "escada_varanda_lateral",
+          "rooms": [
+            "Varanda (Lateral)",
+            "EXTERIOR"
+          ],
+          "center": [
+            9.26,
+            -2.44
+          ],
+          "width": 1.0,
+          "type": "open"
+        }
+      ]
+    },
+    {
+      "floor_index": 1,
+      "name": "Primeiro Andar",
+      "rooms": [
+        {
+          "name": "Quarto dos Fundos (Esquerdo)",
+          "bounds": {
+            "min": [
+              -8.0,
+              -10.0
+            ],
+            "max": [
+              -2.64,
+              -5.28
+            ]
+          }
+        },
+        {
+          "name": "Quarto dos Fundos (Esquerdo) - Armario",
+          "bounds": {
+            "min": [
+              -8.0,
+              -5.28
+            ],
+            "max": [
+              -4.12,
+              -3.29
+            ]
+          }
+        },
+        {
+          "name": "Banheiro Social",
+          "bounds": {
+            "min": [
+              -2.64,
+              -10.0
+            ],
+            "max": [
+              1.25,
+              -5.28
+            ]
+          }
+        },
+        {
+          "name": "Quarto dos Fundos (Direito)",
+          "bounds": {
+            "min": [
+              1.25,
+              -10.0
+            ],
+            "max": [
+              7.0,
+              -5.28
+            ]
+          }
+        },
+        {
+          "name": "Quarto dos Fundos (Direito) - Alcova",
+          "bounds": {
+            "min": [
+              2.82,
+              -5.28
+            ],
+            "max": [
+              7.0,
+              -4.09
+            ]
+          }
+        },
+        {
+          "name": "Hall Superior",
+          "bounds": {
+            "min": [
+              -4.12,
+              -5.28
+            ],
+            "max": [
+              2.82,
+              -3.29
+            ]
+          }
+        },
+        {
+          "name": "Corredor Leste",
+          "bounds": {
+            "min": [
+              1.25,
+              -3.29
+            ],
+            "max": [
+              2.82,
+              0.19
+            ]
+          }
+        },
+        {
+          "name": "Quarto de Costura",
+          "bounds": {
+            "min": [
+              2.82,
+              -4.09
+            ],
+            "max": [
+              7.0,
+              0.19
+            ]
+          }
+        },
+        {
+          "name": "Quarto da Frente (Direito)",
+          "bounds": {
+            "min": [
+              1.25,
+              0.19
+            ],
+            "max": [
+              7.0,
+              5.5
+            ]
+          }
+        },
+        {
+          "name": "Galeria da Escada",
+          "bounds": {
+            "min": [
+              -2.64,
+              -3.29
+            ],
+            "max": [
+              1.25,
+              3.02
+            ]
+          }
+        },
+        {
+          "name": "Closet",
+          "bounds": {
+            "min": [
+              -4.12,
+              -3.29
+            ],
+            "max": [
+              -2.64,
+              -0.05
+            ]
+          }
+        },
+        {
+          "name": "Banheiro da Suite",
+          "bounds": {
+            "min": [
+              -8.0,
+              -3.29
+            ],
+            "max": [
+              -4.12,
+              -0.05
+            ]
+          }
+        },
+        {
+          "name": "Suite Principal",
+          "bounds": {
+            "min": [
+              -8.0,
+              -0.05
+            ],
+            "max": [
+              -2.64,
+              5.5
+            ]
+          }
+        },
+        {
+          "name": "Quarto de Apoio",
+          "bounds": {
+            "min": [
+              -2.64,
+              3.02
+            ],
+            "max": [
+              1.25,
+              5.5
+            ]
+          }
+        }
+      ],
+      "doors": [
+        {
+          "id": "porta_quarto_fundos_esq",
+          "rooms": [
+            "Hall Superior",
+            "Quarto dos Fundos (Esquerdo)"
+          ],
+          "center": [
+            -3.39,
+            -5.28
+          ],
+          "width": 0.8,
+          "type": "door",
+          "swing_into": "Hall Superior"
+        },
+        {
+          "id": "armario_quarto_esq",
+          "rooms": [
+            "Quarto dos Fundos (Esquerdo)",
+            "Quarto dos Fundos (Esquerdo) - Armario"
+          ],
+          "center": [
+            -6.06,
+            -5.28
+          ],
+          "width": 3.8,
+          "type": "open"
+        },
+        {
+          "id": "porta_banheiro_social",
+          "rooms": [
+            "Hall Superior",
+            "Banheiro Social"
+          ],
+          "center": [
+            -0.55,
+            -5.28
+          ],
+          "width": 0.85,
+          "type": "door",
+          "swing_into": "Banheiro Social"
+        },
+        {
+          "id": "porta_quarto_fundos_dir",
+          "rooms": [
+            "Hall Superior",
+            "Quarto dos Fundos (Direito)"
+          ],
+          "center": [
+            2.05,
+            -5.28
+          ],
+          "width": 0.9,
+          "type": "door",
+          "swing_into": "Quarto dos Fundos (Direito)"
+        },
+        {
+          "id": "alcova_quarto_dir",
+          "rooms": [
+            "Quarto dos Fundos (Direito)",
+            "Quarto dos Fundos (Direito) - Alcova"
+          ],
+          "center": [
+            4.9,
+            -5.28
+          ],
+          "width": 4.1,
+          "type": "open"
+        },
+        {
+          "id": "vao_corredor_leste",
+          "rooms": [
+            "Hall Superior",
+            "Corredor Leste"
+          ],
+          "center": [
+            2.05,
+            -3.29
+          ],
+          "width": 1.5,
+          "type": "open"
+        },
+        {
+          "id": "vao_galeria",
+          "rooms": [
+            "Hall Superior",
+            "Galeria da Escada"
+          ],
+          "center": [
+            -0.7,
+            -3.29
+          ],
+          "width": 3.85,
+          "type": "open"
+        },
+        {
+          "id": "porta_costura",
+          "rooms": [
+            "Corredor Leste",
+            "Quarto de Costura"
+          ],
+          "center": [
+            2.82,
+            -1.91
+          ],
+          "width": 0.85,
+          "type": "door",
+          "swing_into": "Quarto de Costura"
+        },
+        {
+          "id": "porta_quarto_frente_dir",
+          "rooms": [
+            "Corredor Leste",
+            "Quarto da Frente (Direito)"
+          ],
+          "center": [
+            2.05,
+            0.19
+          ],
+          "width": 0.85,
+          "type": "door",
+          "swing_into": "Quarto da Frente (Direito)"
+        },
+        {
+          "id": "porta_suite",
+          "rooms": [
+            "Galeria da Escada",
+            "Suite Principal"
+          ],
+          "center": [
+            -2.64,
+            2.13
+          ],
+          "width": 0.9,
+          "type": "door",
+          "swing_into": "Suite Principal"
+        },
+        {
+          "id": "porta_apoio",
+          "rooms": [
+            "Galeria da Escada",
+            "Quarto de Apoio"
+          ],
+          "center": [
+            -0.7,
+            3.02
+          ],
+          "width": 0.9,
+          "type": "door",
+          "swing_into": "Quarto de Apoio"
+        },
+        {
+          "id": "porta_banheiro_suite",
+          "rooms": [
+            "Banheiro da Suite",
+            "Suite Principal"
+          ],
+          "center": [
+            -5.52,
+            -0.05
+          ],
+          "width": 0.85,
+          "type": "door",
+          "swing_into": "Suite Principal"
+        },
+        {
+          "id": "passagem_closet_banheiro",
+          "rooms": [
+            "Banheiro da Suite",
+            "Closet"
+          ],
+          "center": [
+            -4.12,
+            -0.78
+          ],
+          "width": 0.8,
+          "type": "arch"
+        },
+        {
+          "id": "passagem_closet_suite",
+          "rooms": [
+            "Closet",
+            "Suite Principal"
+          ],
+          "center": [
+            -3.39,
+            -0.05
+          ],
+          "width": 0.9,
+          "type": "arch"
+        }
+      ]
+    }
+  ],
+  "vertical_connectors": [
+    {
+      "type": "Escada_Principal_Lance_Esquerdo",
+      "position": {
+        "x": [
+          -2.64,
+          -1.35
+        ],
+        "z": [
+          -2.72,
+          0.84
+        ]
+      },
+      "height_range": [
+        0.0,
+        3.2
+      ],
+      "ascend_direction": "-z",
+      "note": "Escada dupla do Hall de Entrada: sobe da frente para os fundos e chega na Galeria/Hall Superior."
+    },
+    {
+      "type": "Escada_Principal_Lance_Direito",
+      "position": {
+        "x": [
+          0.0,
+          1.25
+        ],
+        "z": [
+          -2.72,
+          0.84
+        ]
+      },
+      "height_range": [
+        0.0,
+        3.2
+      ],
+      "ascend_direction": "-z"
+    },
+    {
+      "type": "Escada_Servico",
+      "position": {
+        "x": [
+          -6.8,
+          -4.0
+        ],
+        "z": [
+          -10.0,
+          -9.0
+        ]
+      },
+      "height_range": [
+        0.0,
+        3.2
+      ],
+      "ascend_direction": "-x",
+      "note": "Não existe na planta; mantida pelo game design. Sobe da Despensa (x=-4.0) ao Quarto dos Fundos (Esquerdo) (x=-6.8)."
+    }
+  ],
+  "solid_blocks": [
+    {
+      "name": "Nucleo_Escada",
+      "floor": 0,
+      "min": [
+        -1.35,
+        0.0,
+        -2.72
+      ],
+      "max": [
+        0.0,
+        3.0,
+        0.84
+      ],
+      "note": "Núcleo central da escada (o 'U' da planta). Em cima vira a passarela que liga o Hall Superior à frente da Galeria."
+    },
+    {
+      "name": "Base_Patamar_Escada",
+      "floor": 0,
+      "min": [
+        -2.64,
+        0.0,
+        -3.37
+      ],
+      "max": [
+        1.25,
+        3.0,
+        -2.72
+      ]
+    }
+  ],
+  "door_settings": {
+    "door_height": 2.1,
+    "arch_height": 2.4,
+    "wall_thickness": 0.15,
+    "railing_height": 1.0,
+    "note": "type: door | double_door | arch (vão com verga) | open (sem parede). swing_into: cômodo para onde a porta abre. 'EXTERIOR' = fora da casa. outdoor: varanda (guarda-corpo em vez de parede)."
+  },
+  "spawn_points": {
+    "hunters": [
+      {
+        "x": -0.6,
+        "y": 0.0,
+        "z": 6.6
+      },
+      {
+        "x": 0.6,
+        "y": 0.0,
+        "z": 6.6
+      }
+    ],
+    "ghosts": [
+      {
+        "x": 4.0,
+        "y": 0.0,
+        "z": -5.5
+      },
+      {
+        "x": -4.5,
+        "y": 0.0,
+        "z": -6.0
+      },
+      {
+        "x": -5.0,
+        "y": 3.2,
+        "z": 3.0
+      },
+      {
+        "x": 4.5,
+        "y": 3.2,
+        "z": -7.0
+      }
+    ]
+  },
+  "_changelog": "v1.3: refeito a partir da planta baixa de referência — 13 cômodos no térreo (com varanda), 14 no primeiro andar, 28 portas/vãos, escada dupla com núcleo central e escada de serviço."
+}

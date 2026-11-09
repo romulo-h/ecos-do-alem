@@ -1,0 +1,152 @@
+newmtl madeira_escura
+Kd 0.220 0.120 0.070
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl madeira
+Kd 0.430 0.270 0.150
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl latao
+Kd 0.800 0.620 0.260
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl veludo_vinho
+Kd 0.460 0.080 0.130
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl porcelana
+Kd 0.930 0.930 0.910
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl marmore
+Kd 0.860 0.850 0.810
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl tecido_creme
+Kd 0.890 0.830 0.710
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl vidro
+Kd 0.700 0.820 0.880
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+d 0.35
+
+newmtl mostrador
+Kd 0.960 0.930 0.830
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl ferro
+Kd 0.140 0.140 0.150
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl vela
+Kd 0.960 0.940 0.860
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl chama
+Kd 1.000 0.720 0.250
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+Ke 1.0 0.7 0.25
+
+newmtl linho
+Kd 0.970 0.960 0.930
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl livro_vermelho
+Kd 0.500 0.110 0.100
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl livro_verde
+Kd 0.140 0.300 0.200
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl livro_azul
+Kd 0.140 0.200 0.380
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl livro_marrom
+Kd 0.400 0.240 0.120
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl livro_ocre
+Kd 0.660 0.500 0.220
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl escuro
+Kd 0.050 0.050 0.050
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl ceramica_verde
+Kd 0.160 0.330 0.270
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl terra
+Kd 0.200 0.130 0.080
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl folha
+Kd 0.170 0.420 0.160
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl folha_clara
+Kd 0.320 0.560 0.220
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl cristal
+Kd 0.800 0.900 0.950
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+
+newmtl vinho
+Kd 0.380 0.030 0.080
+Ka 0 0 0
+Ks 0.05 0.05 0.05
+Ns 20
+

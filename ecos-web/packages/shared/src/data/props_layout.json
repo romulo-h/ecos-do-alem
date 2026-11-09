@@ -1,0 +1,898 @@
+{
+  "map": "Mansao_Vitoriana",
+  "total_props": 58,
+  "props_catalog": [
+    {
+      "id": "prop_clock",
+      "model": "relogio_pendulo.obj",
+      "name": "Relogio de Pendulo",
+      "category": "decor",
+      "size": "medio",
+      "risk": "medio",
+      "dimensions": [
+        0.5,
+        2.0,
+        0.35
+      ],
+      "model_path": "Assets/Resources/Moveis/relogio_pendulo.obj"
+    },
+    {
+      "id": "prop_armchair",
+      "model": "poltrona_vitoriana.obj",
+      "name": "Poltrona Vitoriana",
+      "category": "assento",
+      "size": "medio",
+      "risk": "baixo",
+      "dimensions": [
+        0.85,
+        1.05,
+        0.85
+      ],
+      "model_path": "Assets/Resources/Moveis/poltrona_vitoriana.obj"
+    },
+    {
+      "id": "prop_bookshelf",
+      "model": "estante_livros.obj",
+      "name": "Estante de Livros",
+      "category": "armazenamento",
+      "size": "grande",
+      "risk": "alto",
+      "dimensions": [
+        1.2,
+        2.1,
+        0.4
+      ],
+      "model_path": "Assets/Resources/Moveis/estante_livros.obj"
+    },
+    {
+      "id": "prop_chandelier",
+      "model": "candelabro.obj",
+      "name": "Candelabro / Lustre",
+      "category": "iluminacao",
+      "size": "medio",
+      "risk": "baixo",
+      "special_ability": "Causa faiscas e pisca iluminacao ao assombrar",
+      "dimensions": [
+        0.8,
+        0.8,
+        0.8
+      ],
+      "model_path": "Assets/Resources/Moveis/candelabro.obj"
+    },
+    {
+      "id": "prop_toilet",
+      "model": "vaso_sanitario.obj",
+      "name": "Vaso Sanitario",
+      "category": "sanitario",
+      "size": "medio",
+      "risk": "alto",
+      "special_ability": "Descarga espectral com som alto",
+      "dimensions": [
+        0.45,
+        0.8,
+        0.7
+      ],
+      "model_path": "Assets/Resources/Moveis/vaso_sanitario.obj"
+    },
+    {
+      "id": "prop_sink",
+      "model": "pia.obj",
+      "name": "Pia Vitoriana",
+      "category": "hidraulica",
+      "size": "medio",
+      "risk": "medio",
+      "special_ability": "Torneira pingando agua espectral",
+      "dimensions": [
+        0.6,
+        0.9,
+        0.5
+      ],
+      "model_path": "Assets/Resources/Moveis/pia.obj",
+      "top_surface": 0.835
+    },
+    {
+      "id": "prop_shower",
+      "model": "chuveiro.obj",
+      "name": "Chuveiro Vitoriano",
+      "category": "hidraulica",
+      "size": "grande",
+      "risk": "medio",
+      "special_ability": "Névoa de vapor que reduz visao termica dos cacadores",
+      "dimensions": [
+        0.9,
+        2.1,
+        0.9
+      ],
+      "model_path": "Assets/Resources/Moveis/chuveiro.obj"
+    },
+    {
+      "id": "prop_bed",
+      "model": "cama_vitoriana.obj",
+      "name": "Cama Vitoriana",
+      "category": "dormitorio",
+      "size": "grande",
+      "risk": "baixo",
+      "special_ability": "Mola rangente ao tremer nos 15s",
+      "dimensions": [
+        1.6,
+        1.0,
+        2.1
+      ],
+      "model_path": "Assets/Resources/Moveis/cama_vitoriana.obj"
+    },
+    {
+      "id": "prop_plant",
+      "model": "vaso_planta.obj",
+      "name": "Vaso de Planta",
+      "category": "planta",
+      "size": "medio",
+      "risk": "baixo",
+      "special_ability": "Folhas farfalham ao assombrar; boa camuflagem em cantos",
+      "dimensions": [
+        0.6,
+        1.3,
+        0.6
+      ],
+      "model_path": "Assets/Resources/Moveis/vaso_planta.obj"
+    },
+    {
+      "id": "prop_glass",
+      "model": "copo_cristal.obj",
+      "name": "Copo de Cristal",
+      "category": "louca",
+      "size": "pequeno",
+      "risk": "alto",
+      "special_ability": "Tilinta alto ao assombrar; difícil de achar, mas qualquer tremor chama atenção",
+      "dimensions": [
+        0.09,
+        0.12,
+        0.09
+      ],
+      "model_path": "Assets/Resources/Moveis/copo_cristal.obj"
+    },
+    {
+      "id": "prop_dining_table",
+      "model": "mesa_jantar.obj",
+      "name": "Mesa de Jantar",
+      "category": "decor",
+      "size": "grande",
+      "risk": "medio",
+      "special_ability": "Assombrada, sacode e faz tilintar os copos em cima",
+      "dimensions": [
+        1.0,
+        0.76,
+        2.2
+      ],
+      "top_surface": 0.76,
+      "model_path": "Assets/Resources/Moveis/mesa_jantar.obj"
+    },
+    {
+      "id": "prop_sideboard",
+      "model": "aparador.obj",
+      "name": "Aparador",
+      "category": "armazenamento",
+      "size": "medio",
+      "risk": "baixo",
+      "special_ability": "Portas e gavetas batem; copos em cima tilintam",
+      "dimensions": [
+        1.5,
+        0.9,
+        0.45
+      ],
+      "top_surface": 0.9,
+      "model_path": "Assets/Resources/Moveis/aparador.obj"
+    }
+  ],
+  "spawned_props": [
+    {
+      "id": "prop_01",
+      "type": "prop_clock",
+      "floor": 0,
+      "room": "Vestibulo",
+      "position": {
+        "x": -2.3,
+        "y": 0.0,
+        "z": 4.3
+      },
+      "rotation_y": 90.0
+    },
+    {
+      "id": "prop_02",
+      "type": "prop_chandelier",
+      "floor": 0,
+      "room": "Hall de Entrada",
+      "position": {
+        "x": -0.6,
+        "y": 2.2,
+        "z": 2.0
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_03",
+      "type": "prop_bookshelf",
+      "floor": 0,
+      "room": "Escritorio / Biblioteca",
+      "position": {
+        "x": -7.75,
+        "y": 0.0,
+        "z": 1.5
+      },
+      "rotation_y": 90.0
+    },
+    {
+      "id": "prop_04",
+      "type": "prop_bookshelf",
+      "floor": 0,
+      "room": "Escritorio / Biblioteca",
+      "position": {
+        "x": -7.75,
+        "y": 0.0,
+        "z": 3.5
+      },
+      "rotation_y": 90.0
+    },
+    {
+      "id": "prop_05",
+      "type": "prop_armchair",
+      "floor": 0,
+      "room": "Escritorio / Biblioteca",
+      "position": {
+        "x": -4.5,
+        "y": 0.0,
+        "z": 3.0
+      },
+      "rotation_y": 45.0
+    },
+    {
+      "id": "prop_06",
+      "type": "prop_chandelier",
+      "floor": 0,
+      "room": "Escritorio / Biblioteca",
+      "position": {
+        "x": -5.3,
+        "y": 2.2,
+        "z": 2.7
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_07",
+      "type": "prop_chandelier",
+      "floor": 0,
+      "room": "Sala de Jantar",
+      "position": {
+        "x": 4.2,
+        "y": 2.2,
+        "z": 2.2
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_08",
+      "type": "prop_armchair",
+      "floor": 0,
+      "room": "Sala de Estar",
+      "position": {
+        "x": 3.5,
+        "y": 0.0,
+        "z": -5.0
+      },
+      "rotation_y": 180.0
+    },
+    {
+      "id": "prop_09",
+      "type": "prop_armchair",
+      "floor": 0,
+      "room": "Sala de Estar",
+      "position": {
+        "x": 5.5,
+        "y": 0.0,
+        "z": -5.0
+      },
+      "rotation_y": 200.0
+    },
+    {
+      "id": "prop_10",
+      "type": "prop_clock",
+      "floor": 0,
+      "room": "Sala de Estar",
+      "position": {
+        "x": 6.6,
+        "y": 0.0,
+        "z": -8.5
+      },
+      "rotation_y": 270.0
+    },
+    {
+      "id": "prop_11",
+      "type": "prop_chandelier",
+      "floor": 0,
+      "room": "Sala de Estar",
+      "position": {
+        "x": 4.2,
+        "y": 2.2,
+        "z": -5.5
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_12",
+      "type": "prop_sink",
+      "floor": 0,
+      "room": "Cozinha",
+      "position": {
+        "x": -5.0,
+        "y": 0.0,
+        "z": -7.25
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_13",
+      "type": "prop_bookshelf",
+      "floor": 0,
+      "room": "Cozinha",
+      "position": {
+        "x": -7.75,
+        "y": 0.0,
+        "z": -5.5
+      },
+      "rotation_y": 90.0
+    },
+    {
+      "id": "prop_14",
+      "type": "prop_toilet",
+      "floor": 0,
+      "room": "WC",
+      "position": {
+        "x": -7.6,
+        "y": 0.0,
+        "z": -1.0
+      },
+      "rotation_y": 90.0
+    },
+    {
+      "id": "prop_15",
+      "type": "prop_sink",
+      "floor": 0,
+      "room": "WC",
+      "position": {
+        "x": -6.5,
+        "y": 0.0,
+        "z": -1.9
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_16",
+      "type": "prop_clock",
+      "floor": 1,
+      "room": "Hall Superior",
+      "position": {
+        "x": -3.92,
+        "y": 3.2,
+        "z": -3.75
+      },
+      "rotation_y": 90.0
+    },
+    {
+      "id": "prop_17",
+      "type": "prop_chandelier",
+      "floor": 1,
+      "room": "Galeria da Escada",
+      "position": {
+        "x": -0.65,
+        "y": 5.4,
+        "z": -1.0
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_18",
+      "type": "prop_bed",
+      "floor": 1,
+      "room": "Suite Principal",
+      "position": {
+        "x": -5.5,
+        "y": 3.2,
+        "z": 4.4
+      },
+      "rotation_y": 180.0
+    },
+    {
+      "id": "prop_19",
+      "type": "prop_chandelier",
+      "floor": 1,
+      "room": "Suite Principal",
+      "position": {
+        "x": -5.3,
+        "y": 5.4,
+        "z": 2.5
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_20",
+      "type": "prop_armchair",
+      "floor": 1,
+      "room": "Suite Principal",
+      "position": {
+        "x": -7.3,
+        "y": 3.2,
+        "z": 1.2
+      },
+      "rotation_y": 135.0
+    },
+    {
+      "id": "prop_21",
+      "type": "prop_bookshelf",
+      "floor": 1,
+      "room": "Suite Principal",
+      "position": {
+        "x": -7.75,
+        "y": 3.2,
+        "z": 4.6
+      },
+      "rotation_y": 90.0
+    },
+    {
+      "id": "prop_22",
+      "type": "prop_toilet",
+      "floor": 1,
+      "room": "Banheiro da Suite",
+      "position": {
+        "x": -7.6,
+        "y": 3.2,
+        "z": -1.0
+      },
+      "rotation_y": 90.0
+    },
+    {
+      "id": "prop_23",
+      "type": "prop_sink",
+      "floor": 1,
+      "room": "Banheiro da Suite",
+      "position": {
+        "x": -6.8,
+        "y": 3.2,
+        "z": -3.0
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_24",
+      "type": "prop_shower",
+      "floor": 1,
+      "room": "Banheiro da Suite",
+      "position": {
+        "x": -4.6,
+        "y": 3.2,
+        "z": -2.8
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_25",
+      "type": "prop_bed",
+      "floor": 1,
+      "room": "Quarto da Frente (Direito)",
+      "position": {
+        "x": 4.5,
+        "y": 3.2,
+        "z": 4.4
+      },
+      "rotation_y": 180.0
+    },
+    {
+      "id": "prop_26",
+      "type": "prop_armchair",
+      "floor": 1,
+      "room": "Quarto de Costura",
+      "position": {
+        "x": 4.5,
+        "y": 3.2,
+        "z": -1.5
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_27",
+      "type": "prop_bookshelf",
+      "floor": 1,
+      "room": "Quarto de Costura",
+      "position": {
+        "x": 6.75,
+        "y": 3.2,
+        "z": -2.0
+      },
+      "rotation_y": 270.0
+    },
+    {
+      "id": "prop_28",
+      "type": "prop_chandelier",
+      "floor": 1,
+      "room": "Quarto de Costura",
+      "position": {
+        "x": 4.8,
+        "y": 5.4,
+        "z": -2.0
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_29",
+      "type": "prop_bed",
+      "floor": 1,
+      "room": "Quarto dos Fundos (Direito)",
+      "position": {
+        "x": 4.5,
+        "y": 3.2,
+        "z": -8.9
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_30",
+      "type": "prop_armchair",
+      "floor": 1,
+      "room": "Quarto dos Fundos (Direito)",
+      "position": {
+        "x": 2.0,
+        "y": 3.2,
+        "z": -7.0
+      },
+      "rotation_y": 90.0
+    },
+    {
+      "id": "prop_31",
+      "type": "prop_clock",
+      "floor": 1,
+      "room": "Quarto dos Fundos (Direito)",
+      "position": {
+        "x": 6.6,
+        "y": 3.2,
+        "z": -6.0
+      },
+      "rotation_y": 270.0
+    },
+    {
+      "id": "prop_32",
+      "type": "prop_toilet",
+      "floor": 1,
+      "room": "Banheiro Social",
+      "position": {
+        "x": -1.8,
+        "y": 3.2,
+        "z": -9.6
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_33",
+      "type": "prop_sink",
+      "floor": 1,
+      "room": "Banheiro Social",
+      "position": {
+        "x": -0.4,
+        "y": 3.2,
+        "z": -9.7
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_34",
+      "type": "prop_shower",
+      "floor": 1,
+      "room": "Banheiro Social",
+      "position": {
+        "x": 0.75,
+        "y": 3.2,
+        "z": -9.5
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_35",
+      "type": "prop_bed",
+      "floor": 1,
+      "room": "Quarto dos Fundos (Esquerdo)",
+      "position": {
+        "x": -3.7,
+        "y": 3.2,
+        "z": -7.0
+      },
+      "rotation_y": 270.0
+    },
+    {
+      "id": "prop_36",
+      "type": "prop_bookshelf",
+      "floor": 1,
+      "room": "Quarto de Apoio",
+      "position": {
+        "x": 0.9,
+        "y": 3.2,
+        "z": 4.4
+      },
+      "rotation_y": 270.0
+    },
+    {
+      "id": "prop_37",
+      "type": "prop_plant",
+      "floor": 0,
+      "room": "Vestibulo",
+      "position": {
+        "x": 1.0,
+        "y": 0.0,
+        "z": 5.0
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_38",
+      "type": "prop_plant",
+      "floor": 0,
+      "room": "Hall de Entrada",
+      "position": {
+        "x": -2.2,
+        "y": 0.0,
+        "z": 2.6
+      },
+      "rotation_y": 37.0
+    },
+    {
+      "id": "prop_39",
+      "type": "prop_plant",
+      "floor": 0,
+      "room": "Sala de Jantar",
+      "position": {
+        "x": 6.5,
+        "y": 0.0,
+        "z": 5.0
+      },
+      "rotation_y": 74.0
+    },
+    {
+      "id": "prop_40",
+      "type": "prop_plant",
+      "floor": 0,
+      "room": "Sala de Estar",
+      "position": {
+        "x": 2.0,
+        "y": 0.0,
+        "z": -9.5
+      },
+      "rotation_y": 111.0
+    },
+    {
+      "id": "prop_41",
+      "type": "prop_plant",
+      "floor": 0,
+      "room": "Escritorio / Biblioteca",
+      "position": {
+        "x": -3.2,
+        "y": 0.0,
+        "z": 5.0
+      },
+      "rotation_y": 148.0
+    },
+    {
+      "id": "prop_42",
+      "type": "prop_plant",
+      "floor": 0,
+      "room": "Varanda (Frente)",
+      "position": {
+        "x": 8.7,
+        "y": 0.0,
+        "z": 7.3
+      },
+      "rotation_y": 185.0
+    },
+    {
+      "id": "prop_43",
+      "type": "prop_plant",
+      "floor": 1,
+      "room": "Hall Superior",
+      "position": {
+        "x": -1.9,
+        "y": 3.2,
+        "z": -4.85
+      },
+      "rotation_y": 222.0
+    },
+    {
+      "id": "prop_44",
+      "type": "prop_plant",
+      "floor": 1,
+      "room": "Suite Principal",
+      "position": {
+        "x": -3.1,
+        "y": 3.2,
+        "z": 5.0
+      },
+      "rotation_y": 259.0
+    },
+    {
+      "id": "prop_45",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "Cozinha",
+      "position": {
+        "x": -4.75,
+        "y": 0.835,
+        "z": -7.17
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_12"
+    },
+    {
+      "id": "prop_46",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "Cozinha",
+      "position": {
+        "x": -5.25,
+        "y": 0.835,
+        "z": -7.17
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_12"
+    },
+    {
+      "id": "prop_47",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "WC",
+      "position": {
+        "x": -6.25,
+        "y": 0.835,
+        "z": -1.82
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_15"
+    },
+    {
+      "id": "prop_48",
+      "type": "prop_glass",
+      "floor": 1,
+      "room": "Banheiro da Suite",
+      "position": {
+        "x": -6.55,
+        "y": 4.035,
+        "z": -2.92
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_23"
+    },
+    {
+      "id": "prop_49",
+      "type": "prop_glass",
+      "floor": 1,
+      "room": "Banheiro Social",
+      "position": {
+        "x": -0.15,
+        "y": 4.035,
+        "z": -9.62
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_33"
+    },
+    {
+      "id": "prop_50",
+      "type": "prop_dining_table",
+      "floor": 0,
+      "room": "Sala de Jantar",
+      "position": {
+        "x": 4.2,
+        "y": 0.0,
+        "z": 2.2
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_51",
+      "type": "prop_sideboard",
+      "floor": 0,
+      "room": "Sala de Almoco / Copa",
+      "position": {
+        "x": -0.8,
+        "y": 0.0,
+        "z": -9.77
+      },
+      "rotation_y": 0.0
+    },
+    {
+      "id": "prop_52",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "Sala de Jantar",
+      "position": {
+        "x": 3.9,
+        "y": 0.76,
+        "z": 1.6
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_50"
+    },
+    {
+      "id": "prop_53",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "Sala de Jantar",
+      "position": {
+        "x": 4.5,
+        "y": 0.76,
+        "z": 1.6
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_50"
+    },
+    {
+      "id": "prop_54",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "Sala de Jantar",
+      "position": {
+        "x": 3.9,
+        "y": 0.76,
+        "z": 2.8
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_50"
+    },
+    {
+      "id": "prop_55",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "Sala de Jantar",
+      "position": {
+        "x": 4.5,
+        "y": 0.76,
+        "z": 2.8
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_50"
+    },
+    {
+      "id": "prop_56",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "Sala de Almoco / Copa",
+      "position": {
+        "x": -1.25,
+        "y": 0.9,
+        "z": -9.72
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_51"
+    },
+    {
+      "id": "prop_57",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "Sala de Almoco / Copa",
+      "position": {
+        "x": -0.8,
+        "y": 0.9,
+        "z": -9.72
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_51"
+    },
+    {
+      "id": "prop_58",
+      "type": "prop_glass",
+      "floor": 0,
+      "room": "Sala de Almoco / Copa",
+      "position": {
+        "x": -0.35,
+        "y": 0.9,
+        "z": -9.72
+      },
+      "rotation_y": 0.0,
+      "on_top_of": "prop_51"
+    }
+  ],
+  "_dimensions_note": "dimensions = [largura X, altura Y, profundidade Z] em metros, antes da rotação; usadas no greybox até os modelos .obj existirem.",
+  "_changelog": "v1.3: os 36 móveis foram redistribuídos nos cômodos da planta baixa de referência. v1.4: modelos 3D low-poly gerados (Assets/Resources/Moveis); 5 móveis reorientados para encostar o fundo/cabeceira na parede. v1.5: +8 vasos de planta e +5 copos de cristal (sobre as pias, campo on_top_of). Total 49. v1.6: Mesa de Jantar (Sala de Jantar) e Aparador (Copa), possuíveis, com +7 copos. Total 58."
+}

@@ -1,0 +1,30 @@
+# Node / web
+node_modules/
+dist/
+*.log
+.vitest/
+*.tsbuildinfo
+
+# Unity (pastas geradas pelo editor)
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+*.csproj
+*.sln
+*.suo
+*.user
+*.pidb
+*.booproj
+*.unityproj
+.vs/
+.vscode/
+.idea/
+
+# Sistema
+*.stackdump
+Thumbs.db
+.DS_Store
