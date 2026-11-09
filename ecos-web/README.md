@@ -20,11 +20,41 @@ pnpm install     # instala tudo
 pnpm dev         # jogo em http://localhost:5174
 pnpm test        # regras do jogo (Vitest)
 pnpm typecheck   # TypeScript nos pacotes
-pnpm build       # build de produção em apps/web/dist (site estático)
+pnpm build       # build de produção: apps/web/dist (site) e apps/server/dist (servidor)
+pnpm start       # servidor de produção em http://localhost:2567 (rode pnpm build antes)
 ```
 
-O build é um site estático: dá para publicar `apps/web/dist` em qualquer hospedagem de arquivos
+O cliente também é um site estático: `apps/web/dist` funciona em qualquer hospedagem de arquivos
 (itch.io, GitHub Pages, Netlify, Nginx). Precisa ser servido por HTTP; abrir o `index.html` direto não funciona.
+
+## Deploy (Coolify)
+
+Mesmo formato do expediente-caotico: um `Dockerfile` na raiz do repositório gera uma imagem com o servidor
+Node (`apps/server`), que entrega o jogo e responde `/health`. A etapa 2 (multiplayer por WebSocket) vai
+rodar nesse mesmo servidor.
+
+```bash
+docker build -t ecos-do-alem .      # na raiz do repositório, não dentro de ecos-web
+docker run -p 2567:2567 ecos-do-alem
+```
+
+No Coolify:
+
+1. **New Resource > Application**, escolha o repositório `romulo-h/ecos-do-alem` (repositório privado: pelo
+   GitHub App do Coolify) e a branch `main`.
+2. **Build Pack:** `Dockerfile`. **Base Directory:** `/`. **Dockerfile Location:** `/Dockerfile`.
+3. **Ports Exposes:** `2567`.
+4. **Domains:** o endereço do jogo (ex.: `https://ecos.seudominio.com.br`). O Coolify cuida do HTTPS.
+5. **Health Check:** caminho `/health`, porta `2567` (a imagem também traz um `HEALTHCHECK`).
+6. Ligue o **Auto Deploy** para publicar a cada push na `main`.
+
+| Variável | Para que serve |
+|---|---|
+| `PORT` | porta do servidor. Padrão `2567`; só mude se mudar também o "Ports Exposes" |
+
+Não há segredo, banco nem volume: o jogo não guarda nada no servidor.
+
+O CI (`.github/workflows/ci.yml`) roda typecheck, testes e build a cada push e PR.
 
 ## Como jogar
 
@@ -50,6 +80,7 @@ packages/shared   TODA a regra do jogo, sem navegador (roda igual no servidor da
   src/sim/        match.ts (partida: fases, possessão, regra dos 20 s, aspirador, EMF, sal, portas,
                   Caçada Invertida, vitória), bots.ts, types.ts (Intent, estado, eventos)
   src/test/       testes das regras e uma partida inteira só com bots
+apps/server       servidor de produção (Node puro): entrega o build e responde /health; recebe a etapa 2
 apps/web          React (menus, HUD, pausa, resultado) + Three.js (cena, câmeras, som)
   src/game/       session.ts (laço de 30 passos/s), scene.ts, actors.ts, audio.ts, input.ts
   public/assets/  moveis/ (.obj + .mtl) e audio/ (.wav), copiados do projeto Unity

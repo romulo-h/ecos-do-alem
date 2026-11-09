@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "pnpm --filter @ecos/web dev",
     "build": "pnpm -r --filter \"./apps/*\" build",
+    "start": "node apps/server/dist/index.js",
     "test": "vitest run",
     "typecheck": "pnpm -r typecheck"
   },

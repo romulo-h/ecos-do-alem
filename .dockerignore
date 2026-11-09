@@ -1,0 +1,8 @@
+.git
+.github
+EcosDoAlem
+**/node_modules
+**/dist
+**/.vitest
+**/*.stackdump
+**/*.log
